@@ -53,5 +53,3 @@ public class UnionFind {
     public long getFindCount() { return findCount; }
     public long getComparisonCount() { return comparisonCount; }
 }
-
-
