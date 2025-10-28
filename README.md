@@ -1,8 +1,8 @@
-# 🚀 Minimum Spanning Tree Algorithms: Comprehensive Performance Analysis
+# Minimum Spanning Tree Algorithms: Comprehensive Performance Analysis
 
 A complete performance study and comparison of **Prim’s** and **Kruskal’s** algorithms for computing the **Minimum Spanning Tree (MST)** on graphs of varying size and density.
 
-## 🧭 Executive Summary
+## Executive Summary
 
 This report compares two classic MST algorithms — **Prim’s** and **Kruskal’s** — using both **theoretical analysis** and **empirical testing**.
 
@@ -16,7 +16,7 @@ Although theoretical analysis suggests that **Prim’s algorithm** is better for
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 - Daa_3.1/
 - │
@@ -43,9 +43,9 @@ Although theoretical analysis suggests that **Prim’s algorithm** is better for
 ```markdown
 # Minimum Spanning Tree Algorithms: Prim vs Kruskal
 
-## 🎯 Implemented Algorithms
+## Implemented Algorithms
 
-### 🧩 Prim's Algorithm
+### Prim's Algorithm
 - **Approach**: Greedy vertex expansion using a priority queue
 - **Implementation**: `PrimMST.java`
 - **Core Code Logic**:
@@ -64,7 +64,7 @@ while (!pq.isEmpty() && mst.size() < G.V() - 1) {
 - **Complexity**: O(E log V)
 - **Ideal for**: Dense graphs
 
-### 🧮 Kruskal's Algorithm
+### Kruskal's Algorithm
 - **Approach**: Greedy edge selection with cycle detection using Union-Find
 - **Implementation**: `KruskalMST.java`
 - **Core Code Logic**:
@@ -84,7 +84,7 @@ for (Edge e : edges) {
 - **Complexity**: O(E log E)
 - **Ideal for**: Sparse graphs
 
-## 📊 Performance Summary
+## Performance Summary
 
 | Graph Size | Vertices | Dominant Algorithm | Time Advantage |
 |------------|----------|-------------------|----------------|
@@ -93,7 +93,7 @@ for (Edge e : edges) {
 | 🟡 Large   | 300-1000 | **Kruskal**       | +30-40% faster |
 | 🔴 X-Large | > 1000   | **Kruskal**       | +20-45% faster |
 
-## 🚀 Quick Selection Guide
+## Quick Selection Guide
 
 ```java
 // Algorithm selection based on graph size
@@ -107,14 +107,14 @@ public MSTAlgorithm selectAlgorithm(Graph graph) {
 }
 ```
 
-## 📈 Key Findings
+## Key Findings
 
 - **Both algorithms** produce identical MST weights (correctness verified)
 - **Kruskal outperforms Prim** on graphs with ≥50 vertices
 - **20-40% faster execution** for Kruskal on large datasets
 - **Better scalability** demonstrated by Kruskal's algorithm
 
-## 🎯 Usage Recommendations
+## Usage Recommendations
 
 | Scenario | Recommended Algorithm | Reason |
 |----------|---------------------|---------|
@@ -123,7 +123,7 @@ public MSTAlgorithm selectAlgorithm(Graph graph) {
 | Dense graphs | **Kruskal** | Constant-factor efficiency |
 | Time-critical systems | **Kruskal** | Predictable performance |
 
-## 📚 Theoretical vs Empirical
+## Theoretical vs Empirical
 Empirical scaling matches theoretical predictions
 
 Kruskal's better constant factors outweigh higher operation counts
