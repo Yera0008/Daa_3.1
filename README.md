@@ -96,13 +96,12 @@ for (Edge e : edges) {
 ## Quick Selection Guide
 
 ```java
-// Algorithm selection based on graph size
 public MSTAlgorithm selectAlgorithm(Graph graph) {
     int V = graph.vertices();
     if (V < 50) {
-        return new PrimMST(graph);  // Faster for small graphs
+        return new PrimMST(graph);  
     } else {
-        return new KruskalMST(graph); // Better for larger graphs
+        return new KruskalMST(graph); 
     }
 }
 ```
