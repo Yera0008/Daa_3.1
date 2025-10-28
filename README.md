@@ -128,7 +128,3 @@ Empirical scaling matches theoretical predictions
 Kruskal's better constant factors outweigh higher operation counts
 
 Prim's heap operations create significant overhead
-
-Kruskal benefits from better memory locality with sequential processing
-
-Conclusion: Kruskal's algorithm exhibits better scalability, faster execution, and lower real-world time cost on graphs beyond 50 vertices.
